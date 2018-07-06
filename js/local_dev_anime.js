@@ -3,7 +3,7 @@ var changeback;
 //loca dev js
 $('#link1').click(function() {
   $('#seo').attr('class', 'basic');
-  $('body').append("<style>@keyframes topan {0% {clip-path:polygon(" + setframe + ");background-image: url("+changeback+");}100%{clip-path: polygon(57% 0, 0 99%, 86% 77%, 100% 35%); background-image: url(img/green.jpg);}</style>");
+  $('body').append("<style>@keyframes topan {0% {clip-path:polygon(" + setframe + ");background-image: url("+changeback+");}100%{clip-path: polygon(57% 0, 0 99%, 86% 77%, 100% 35%); background-image: url(img/dog.jpg);}</style>");
   $('#seo').addClass('animatetop');
   changeback = 'img/jase.jpg';
   setframe = '57% 0, 0 99%, 86% 77%, 100% 35%';
@@ -11,7 +11,7 @@ $('#link1').click(function() {
 
 $('#link2').click(function() {
   $('#seo').attr('class', 'basic');
-  $('body').append("<style>@keyframes seo {0% {clip-path:polygon(" + setframe + ");background-image: url("+changeback+");}100%{clip-path: polygon(0 28%, 19% 94%, 87% 100%, 100% 0);background-image: url(img/pink.jpg);}</style>");
+  $('body').append("<style>@keyframes seo {0% {clip-path:polygon(" + setframe + ");background-image: url("+changeback+");}100%{clip-path: polygon(0 28%, 19% 94%, 87% 100%, 100% 0);background-image: url(img/jase.jpg);}</style>");
   $('#seo').addClass('animateseo');
   changeback = 'img/dog.jpg';
   setframe = '0 28%, 19% 94%, 87% 100%, 100% 0';
