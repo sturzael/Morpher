@@ -43,7 +43,8 @@ for (var i = 0; i < team.length; i++) {
    locations = team[i].locationCity;
 
    //append a new txt block and set its inner elemnents using array items above
-   console.log([i]);
+
+   $('.middle').append("<li id='link"+[i]"+'></li")
 }
 
 function displaynonetxt(thistext,secondtext) {
