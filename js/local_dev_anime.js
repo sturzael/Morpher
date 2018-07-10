@@ -52,7 +52,8 @@ $.ajax({
 
   },
   success: function(team) {
-textfuj();
+
+console.log("success");
   },
   error: function() {
     console.log("Something Went Wrong");
