@@ -7,6 +7,7 @@ const team = [{
     photourl: 'https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team-June-2018-Jason-008-e1529617894224.jpg',
     locationCity: 'dunedin',
     showDetail: false,
+    clipPath: '23% 24%, 5% 85%, 100% 100%, 80% 0'
   },
   {
     title: 'Michael Palmer',
@@ -15,6 +16,7 @@ const team = [{
     photourl: 'https://www.nettl.com/nz/wp-content/uploads/2016/04/Michael-Palmer.jpg',
     locationCity: 'dunedin',
     showDetail: false,
+    clipPath: '21% 5%, 18% 72%, 73% 93%, 93% 20%'
   },
   {
     title: 'Paul Johnson',
@@ -23,6 +25,7 @@ const team = [{
     photourl: 'https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team-June-2018-Paul-019-e1529617666371.jpg',
     locationCity: 'dunedin',
     showDetail: false,
+    clipPath: '0 28%, 19% 94%, 87% 100%, 100% 0'
   },
   {
     title: 'Britte van der Pouw',
@@ -31,21 +34,19 @@ const team = [{
     photourl: 'https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team-June-2018-Britta-026-e1529617942245.jpg',
     locationCity: 'dunedin',
     showDetail: false,
+    clipPath: '57% 0, 0 99%, 86% 77%, 100% 35%'
   }
 ]
 
 var name,job,descrip,url,locations;
 for (var i = 0; i < team.length; i++) {
-   name = team[i].title;
-   job = team[i].role;
-   descrip = team[i].desc;
-   url = team[i].photourl;
-   locations = team[i].locationCity;
-
-   //append a new txt block and set its inner elemnents using array items above
-
-   $('.middle').append("<li id='link"+[i]"+'></li")
+   $('.middle').append("<li class='member' id='link"+[i]+"'>"+team[i].title+"</li>");
 }
+
+$('.member').each(function(index){
+ el = this.id;
+console.log(el);
+});
 
 function displaynonetxt(thistext,secondtext) {
   $('.et_pb_column_8 .et_pb_text').addClass('displaytxt').removeClass('undisplaytxt');
