@@ -51,8 +51,8 @@ $.ajax({
     }
 
   },
-  success: function(DataFromJson) {
-
+  success: function(team) {
+textfuj();
   },
   error: function() {
     console.log("Something Went Wrong");
@@ -62,6 +62,7 @@ $.ajax({
 });
 
 
+ function textfuj() {
 
 
 
@@ -78,3 +79,5 @@ $('.member').click(function() {
   changeback = "'" + team[el].photourl + "'";
   setframe = team[el].clipPath;
 });
+
+}
