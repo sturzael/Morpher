@@ -1,12 +1,8 @@
-var thistext, secondtext, changeback, setframe;
-$('#link1').css('text-decoration', 'line-through');
-$('#seo').attr('class', 'basic');
-$('body').append("<style>@keyframes topan {0% {clip-path:polygon(" + setframe + ");}100%{clip-path: polygon(57% 0, 0 99%, 86% 77%, 100% 35%);background-image: url('http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Paul-019.jpg');}</style>");
-$('#seo').addClass('animatetop');
-setframe = '57% 0, 0 99%, 86% 77%, 100% 35%';
-thistext = $('.et_pb_text_4');
-secondtext = $('.et_pb_text_5');
-displaynonetxt(thistext, secondtext);
+var changeback = 'https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team-June-2018-Jason-008-e1529617894224.jpg';
+var seo = $('#seo');
+var body = $('body');
+var setframe = '23% 24%, 5% 85%, 100% 100%, 80% 0';
+// displaynonetxt(thistext, secondtext);
 
 
 const team = [{
@@ -47,78 +43,17 @@ const team = [{
   }
 ]
 
-var name, job, descrip, url, locations;
+
 for (var i = 0; i < team.length; i++) {
   $('.middle').append("<li class='member' id='link" + [i] + "'>" + team[i].title + "</li>");
 }
 
-$('.member').each(function(index) {
-  el = this.id;
-  el.replace(/[a-z]/g, '');
-  $('#' + el).click(function() {
-    $('#seo').attr('class', 'basic');
-    $('body').append("<style>@keyframes topan {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(57% 0, 0 99%, 86% 77%, 100% 35%); background-image: url('http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Jason-008.jpg');}</style>");
-    $('#seo').addClass('animatetop');
-  })
-});
 
-function displaynonetxt(thistext, secondtext) {
-  $('.et_pb_column_8 .et_pb_text').addClass('displaytxt').removeClass('undisplaytxt');
-  thistext.addClass('undisplaytxt');
-  secondtext.addClass('undisplaytxt');
-}
-
-
-
-
-$('#link1').click(function() {
-  // thistext = $('.et_pb_text_4');
-  // secondtext = $('.et_pb_text_5');
-  // $('.limorph').css('text-decoration', 'none');
-  // $(this).css('text-decoration', 'line-through');
-  $('#seo').attr('class', 'basic');
-  $('body').append("<style>@keyframes topan {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(57% 0, 0 99%, 86% 77%, 100% 35%); background-image: url('http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Jason-008.jpg');}</style>");
-  $('#seo').addClass('animatetop');
-  changeback = 'http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Jason-008.jpg';
-  setframe = '57% 0, 0 99%, 86% 77%, 100% 35%';
-  displaynonetxt(thistext, secondtext);
-});
-
-$('#link2').click(function() {
-  // thistext = $('.et_pb_text_6');
-  // secondtext = $('.et_pb_text_7');
-  $('.limorph').css('text-decoration', 'none');
-  $(this).css('text-decoration', 'line-through');
-  $('#seo').attr('class', 'basic');
-  $('body').append("<style>@keyframes seo {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(0 28%, 19% 94%, 87% 100%, 100% 0);background-image: url('http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Lola-067-1.jpg');}</style>");
-  $('#seo').addClass('animateseo');
-  changeback = 'http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Lola-067-1.jpg';
-  setframe = '0 28%, 19% 94%, 87% 100%, 100% 0';
-  displaynonetxt(thistext, secondtext);
-})
-
-$('#link3').click(function() {
-  // thistext = $('.et_pb_text_8');
-  // secondtext = $('.et_pb_text_9');
-  $('.limorph').css('text-decoration', 'none');
-  $(this).css('text-decoration', 'line-through');
-  $('#seo').attr('class', 'basic');
-  $('body').append("<style>@keyframes web {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path:polygon(21% 5%, 18% 72%, 73% 93%, 93% 20%);background-image: url('http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Britta-026.jpg');}</style>");
-  $('#seo').addClass('animateweb');
-  changeback = 'http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Britta-026.jpg';
-  setframe = '21% 5%, 18% 72%, 73% 93%, 93% 20%';
-  displaynonetxt(thistext, secondtext);
-});
-
-$('#link4').click(function() {
-  // thistext = $('.et_pb_text_10');
-  // secondtext = $('.et_pb_text_11');
-  $('.limorph').css('text-decoration', 'none');
-  $(this).css('text-decoration', 'line-through');
-  $('#seo').attr('class', 'basic');
-  $('body').append("<style>@keyframes design {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path:polygon(23% 24%, 5% 85%, 100% 100%, 80% 0);background-image: url('http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Paul-019.jpg');}</style>");
-  $('#seo').addClass('animatedesign');
-  changeback = 'http://nettlnz.nz.w3pcloud.com/wp-content/uploads/2018/07/Nettl-Team-June-2018-Paul-019.jpg';
-  setframe = '23% 24%, 5% 85%, 100% 100%, 80% 0';
-  displaynonetxt(thistext, secondtext);
+$('.member').click(function() {
+  el = this.id.replace(/[a-z]/g, '');
+  $('.animationclass').remove();
+  body.append("<style class='animationclass'>.animater" + el + "{animation: animate" + el + " 1s; animation-fill-mode: forwards;}@keyframes animate" + el + " {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(" + team[el].clipPath + "); background-image: url(" + team[el].photourl + ");}</style>");
+  seo.addClass('animater' + el);
+  changeback = "'" + team[el].photourl + "'";
+  setframe = team[el].clipPath;
 });
