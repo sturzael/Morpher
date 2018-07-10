@@ -52,8 +52,8 @@ $.ajax({
 
   },
   success: function(team) {
-
-console.log("success");
+console.log(team.title);
+console.log(team[1].title);
   },
   error: function() {
     console.log("Something Went Wrong");
