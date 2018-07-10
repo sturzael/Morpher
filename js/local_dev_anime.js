@@ -52,8 +52,7 @@ $.ajax({
 
   },
   success: function(team) {
-console.log(team.title);
-console.log(team[1].title);
+    console.log(team[1].title);
   },
   error: function() {
     console.log("Something Went Wrong");
@@ -63,22 +62,21 @@ console.log(team[1].title);
 });
 
 
- function textfuj() {
+function textfuj() {
 
 
+  for (var i = 0; i < team.length; i++) {
+    $('.middle').append("<li class='member' id='link" + [i] + "'>" + team[i].title + "</li>");
+  }
 
-for (var i = 0; i < team.length; i++) {
-  $('.middle').append("<li class='member' id='link" + [i] + "'>" + team[i].title + "</li>");
-}
 
-
-$('.member').click(function() {
-  el = this.id.replace(/[a-z]/g, '');
-  $('.animationclass').remove();
-  body.append("<style class='animationclass'>.animater" + el + "{animation: animate" + el + " 1s; animation-fill-mode: forwards;}@keyframes animate" + el + " {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(" + team[el].clipPath + "); background-image: url(" + team[el].photourl + ");}</style>");
-  seo.addClass('animater' + el);
-  changeback = "'" + team[el].photourl + "'";
-  setframe = team[el].clipPath;
-});
+  $('.member').click(function() {
+    el = this.id.replace(/[a-z]/g, '');
+    $('.animationclass').remove();
+    body.append("<style class='animationclass'>.animater" + el + "{animation: animate" + el + " 1s; animation-fill-mode: forwards;}@keyframes animate" + el + " {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(" + team[el].clipPath + "); background-image: url(" + team[el].photourl + ");}</style>");
+    seo.addClass('animater' + el);
+    changeback = "'" + team[el].photourl + "'";
+    setframe = team[el].clipPath;
+  });
 
 }
