@@ -2,7 +2,6 @@ var changeback = 'https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team
 var seo = $('#seo');
 var body = $('body');
 var setframe = '23% 24%, 5% 85%, 100% 100%, 80% 0';
-
 $.ajax({
   url: "./data/studio_members.json",
   dataType: "json",
@@ -25,10 +24,6 @@ $.ajax({
     });
   },
   error: function() {
-    console.log("Something Went Wrong");
+    return;
   }
 });
-
-function morph() {
-
-}
