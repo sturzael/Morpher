@@ -13,7 +13,10 @@ $.ajax({
     }
   },
   success: function(team) {
-    console.log(team);
+    for (var i = 0; i < team.length; i++) {
+      $('.middle').append("<li class='member' id='link" + [i] + "'>" + team[i].title + "</li>");
+    }
+    morph();
   },
   error: function() {
     console.log("Something Went Wrong");
@@ -21,11 +24,7 @@ $.ajax({
 });
 
 
-function textfuj() {
-  for (var i = 0; i < team.length; i++) {
-    $('.middle').append("<li class='member' id='link" + [i] + "'>" + team[i].title + "</li>");
-  }
-
+function morph() {
   $('.member').click(function() {
     el = this.id.replace(/[a-z]/g, '');
     $('.animationclass').remove();
