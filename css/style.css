@@ -47,23 +47,3 @@ li:hover {
   background-image: url('https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team-June-2018-Jason-008-e1529617894224.jpg');
   clip-path: polygon(23% 24%, 5% 85%, 100% 100%, 80% 0);
 }
-
-.animateseo {
-  animation: seo 1s;
-  animation-fill-mode: forwards;
-}
-
-.animateweb {
-  animation: web 1s;
-  animation-fill-mode: forwards;
-}
-
-.animatetop {
-  animation: topan 1s;
-  animation-fill-mode: forwards;
-}
-
-.animatedesign {
-  animation: design 1s;
-  animation-fill-mode: forwards;
-}
