@@ -2,34 +2,19 @@
   height: 100vh !important;
   width: 100vw;
 }
-
 .wrapper {
   width: 50vw;
   height: 100%;
   float: left;
 }
-
-.rightsda {
-  float: right;
-}
-
-.middle {
-  position: relative;
-  top: 40%;
-  transform: translateY(-50%);
-  margin-left: -200px
-}
-
 li {
   cursor: pointer;
   color: white;
   font-size: 41px;
 }
-
 li:hover {
   text-decoration: line-through;
 }
-
 .basic {
   position: relative;
   top: 40%;
@@ -42,8 +27,7 @@ li:hover {
   height: 600px;
   cursor: pointer;
 }
-
-#seo {
+#morpher {
   background-image: url('https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team-June-2018-Jason-008-e1529617894224.jpg');
   clip-path: polygon(23% 24%, 5% 85%, 100% 100%, 80% 0);
 }
