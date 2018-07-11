@@ -24,6 +24,6 @@ $.ajax({ //pull the data from the json file - The json file should contain all d
     });
   },
   error: function() {
-    console.log("Something went wrong");//if the request fails then don't do anything
+    return;//if the request fails then don't do anything
   }
 });
