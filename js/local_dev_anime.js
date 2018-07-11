@@ -1,4 +1,4 @@
-var changeback = 'https://www.nettl.com/nz/wp-content/uploads/2018/06/Nettl-Team-June-2018-Jason-008-e1529617894224.jpg'; //default image used for the first animation
+var changeback = 'img/jase.jpg'; //default image used for the first animation
 var morpher = $('#morpher'); //the div that morphs
 var body = $('body');
 var setframe = '23% 24%, 5% 85%, 100% 100%, 80% 0'; //default clip path used for the very first animation
