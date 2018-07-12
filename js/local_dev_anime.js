@@ -17,7 +17,7 @@ $.ajax({ //pull the data from the json file - The json file should contain all d
     $('.member').click(function() { //each time you click on li do this
       el = this.id.replace(/[a-z]/g, '');//remove all text from id - will turn 'link1' into '1'
       $('.animationclass').remove(); //remove the old style animation from the body
-      body.append("<style class='animationclass'>.animater" + el + "{animation: animate" + el + " 1s; animation-fill-mode: forwards;}@keyframes animate" + el + " {0% {clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(" + team[el].clipPath + "); background-image: url(" + team[el].photoUrl + ");}</style>"); // append the animation and styling using json data
+      body.append("<style class='animationclass'>.animater" + el + "{animation: animate" + el + " 1s; animation-fill-mode: forwards;}@keyframes animate" + el + " {0% {clip-path:polygon(" + setframe + ");-webkit-clip-path:polygon(" + setframe + ");background-image: url(" + changeback + ");}100%{clip-path: polygon(" + team[el].clipPath + ");-webkit-clip-path:polygon(" + team[el].clipPath + "); background-image: url(" + team[el].photoUrl + ");}</style>"); // append the animation and styling using json data
       morpher.addClass('animater' + el); //make animation happen
       changeback = "'" + team[el].photoUrl + "'"; //set this variable as the old image so that the next animation can reference it
       setframe = team[el].clipPath; //set this variable as the old clip path so that the next animation can reference it
